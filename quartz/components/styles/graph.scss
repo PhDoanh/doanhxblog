@@ -1,12 +1,12 @@
 @use "../../styles/variables.scss" as *;
 
 .graph {
-  & > h3 {
+  &>h3 {
     font-size: 1rem;
     margin: 0;
   }
 
-  & > .graph-outer {
+  &>.graph-outer {
     border-radius: 5px;
     border: 1px solid var(--lightgray);
     box-sizing: border-box;
@@ -15,7 +15,7 @@
     position: relative;
     overflow: hidden;
 
-    & > #global-graph-icon {
+    &>#global-graph-icon {
       color: var(--dark);
       opacity: 0.5;
       width: 18px;
@@ -29,13 +29,14 @@
       background-color: transparent;
       transition: background-color 0.5s ease;
       cursor: pointer;
+
       &:hover {
         background-color: var(--lightgray);
       }
     }
   }
 
-  & > #global-graph-outer {
+  &>#global-graph-outer {
     position: fixed;
     z-index: 9999;
     left: 0;
@@ -50,7 +51,7 @@
       display: inline-block;
     }
 
-    & > #global-graph-container {
+    &>#global-graph-container {
       border: 1px solid var(--lightgray);
       background-color: var(--light);
       border-radius: 5px;
@@ -59,8 +60,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 60vh;
-      width: 50vw;
+      height: 70vh;
+      width: 85vw;
+      box-shadow: 0px 0px 10px 2px rgba(168, 149, 206, 0.75);
 
       @media all and (max-width: $fullPageWidth) {
         width: 90%;

@@ -3,25 +3,25 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "💪 Doanh×Blog",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "created",
+    locale: "vi-VN",
+    baseUrl: "phdoanh.github.io/doanhxblog",
+    ignorePatterns: ["private", "templates", ".obsidian", ".trash"],
+    defaultDateType: "modified",
     theme: {
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Pangolin",
+        body: "Mali",
+        code: "Fira Code",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
+          light: "#f0f6fc",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
@@ -31,14 +31,14 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
+          light: "#0d1117",
+          lightgray: "#39393e",
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          secondary: "#a09aea",
+          tertiary: "#b392f0",
+          highlight: "#282b2d",
         },
       },
     },
